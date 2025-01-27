@@ -2,6 +2,6 @@ body {
   background-color: #000;
 }
 
-h1 {
-  color: white;
+.sidebar__navigation {
+  background-color: #121212;
 }
