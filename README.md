@@ -3,3 +3,5 @@
 ### Descrição das pastas
 
 - **Aula 1**: Revisão HTML, CSS e JS na Prática
+
+- **Aula 2**: Estilo Avançado e Posicionamento: Transformando Layouts
