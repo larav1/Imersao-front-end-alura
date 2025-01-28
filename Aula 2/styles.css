@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #1b1b53;
 }
 
 .sidebar {
@@ -15,13 +15,13 @@ body {
 }
 
 .sidebar__navigation {
-  background-color: #121212;
+  background: linear-gradient(to right, #4b0082, #6a5acd, #9370db);
   border-radius: 8px;
   padding: 16px 0 0 16px;
 }
 
 .sidebar__navigation .logo {
-  background: #121212;
+  background: linear-gradient(to right, #4b0082, #6a5acd, #9370db);
   display: flex;
   border-radius: 8px;
   padding: 16px 0 0 16px;
