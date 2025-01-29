@@ -1,9 +1,6 @@
-* {
-  font-family: "DM Sans", sans-serif;
-}
-
 body {
   background-color: #2c1c36;
+  font-family: var(--font-dm-sans);
 }
 
 .sidebar {
