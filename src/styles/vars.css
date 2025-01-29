@@ -1,5 +1,9 @@
 :root {
   --font-dm-sans: "DM Sans", sans-serif;
+
+  /* COLORS */
+  --bg-icon: #692764;
+  --bg-arrow-color: #2c1c36;
 }
 
 /* MEDIA QUERYS */
