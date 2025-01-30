@@ -2,7 +2,7 @@
 
 .main-container {
   max-width: 80vw;
-  height: 100vh;
+  height: auto; /* Alterado para auto */
   margin-left: 320px;
   margin-right: 56px;
 }
@@ -132,15 +132,14 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .music-container {
-  height: 68vh;
-  /* position: relative; */
+  height: auto; /* Alterado para auto */
   padding-top: 16px;
   margin: 10px;
   border-radius: 10px;
   background-color: #593571;
-  margin-top: -610px;
   margin-left: 332px;
   margin-right: 68px;
+  /* margin-top: -610px; REMOVIDO */
 }
 
 .music-playlist {
@@ -177,27 +176,20 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 /* FIM SCROLL */
 
 .offer__list-item {
-  /* display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+  display: grid;
   gap: 16px;
-  margin-bottom: 16px; */
-
-  /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-  display: grid; /* define o modelo de layout do elemento como uma grade */
-  gap: 16px;
-  grid-gap: 32px; /* não é usado mais */
   margin: 0 auto;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  ); /* Adicionado grid-template-columns */
 }
 
 /* POSITION */
 /* principais são static, relative, absolute, fixed, e sticky. */
 
 .cards {
-  position: relative; /* relative:
-                          Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.
-                          Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
+  position: relative;
   width: 220px;
   height: 200px;
   overflow: hidden;
@@ -207,9 +199,6 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 .cards span {
   padding: 16px;
   position: absolute;
-  /* absolute:
-                          Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado).
-                          Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
   color: var(--text-base-light);
   font-size: 24px;
   font-weight: 700;
@@ -382,4 +371,10 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 #result-artist {
   padding: 20px 40px;
 }
-/* FIM CARD ARTISTA */
+
+/* CORREÇÃO DO MAIN CONTAINER*/
+main {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
