@@ -138,9 +138,9 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   margin: 10px;
   border-radius: 10px;
   background-color: #593571;
-  /* margin-top: -610px;
+  margin-top: -610px;
   margin-left: 332px;
-  margin-right: 68px; */
+  margin-right: 68px;
 }
 
 .music-playlist {
