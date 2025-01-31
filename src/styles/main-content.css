@@ -230,25 +230,28 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   background: rgb(20, 138, 8);
 }
 .card9 {
-  background: rgb(30, 50, 100);
+  background: #8e6d86;
 }
 .card10 {
-  background: rgb(233, 20, 41);
+  background: #3d6868;
 }
 .card11 {
-  background: rgb(80, 55, 80);
+  background: #acbfb7;
 }
 .card12 {
-  background: rgb(216, 64, 0);
+  background: #d18681;
 }
 .card13 {
-  background: rgb(186, 93, 7);
+  background: #b0254f;
 }
 .card14 {
-  background: rgb(0, 30, 80);
+  background: #de4126;
 }
 .card15 {
-  background: rgb(60, 30, 80);
+  background: #eb9605;
+}
+.card16 {
+  background: #bd0876;
 }
 /* FIM COLOR CARDS */
 
@@ -276,7 +279,9 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 .grid-container {
   grid-gap: var(--grid-gap);
   display: grid;
-  grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+  /* grid-template-columns: repeat(var(--column-count), minmax(0, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
   min-width: var(--min-container-width);
 }
 
@@ -286,7 +291,8 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   -ms-flex: 1;
   flex: 1;
   isolation: isolate;
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 28px;
   position: relative;
   transition: background-color 0.3s ease;
   width: 100%;
@@ -377,4 +383,6 @@ main {
   display: flex;
   flex-direction: column;
   height: auto;
+  min-width: 80vw;
+  padding: 20px;
 }

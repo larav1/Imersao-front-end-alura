@@ -1,7 +1,7 @@
 //BOM DIA | BOA TARDE | BOA NOITE
 
 // Obtém a referência do elemento com o ID "greeting"
-const greetingElement = document.getElementById("greeting");
+const greetingElement = document.getElementById("music-greeting");
 
 // Obtém a hora atual do sistema
 const currentHour = new Date().getHours();

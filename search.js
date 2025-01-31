@@ -1,5 +1,5 @@
 const resultArtist = document.getElementById("result-artist");
-const playlistContainer = document.getElementById("result-playlists");
+const musicContainer = document.getElementById("music-result");
 const searchInput = document.getElementById("search-input");
 
 function requestApi(searchTerm) {
@@ -21,14 +21,14 @@ function displayResults(results) {
 }
 
 function hidePlaylists() {
-  playlistContainer.classList.add("hidden");
+  musicContainer.classList.add("hidden");
 }
 
 searchInput.addEventListener("input", function () {
   const searchTerm = searchInput.value.toLowerCase();
   if (searchTerm === "") {
     resultArtist.classList.add("hidden");
-    playlistContainer.classList.remove("hidden");
+    musicContainer.classList.remove("hidden");
     return;
   }
   requestApi(searchTerm);
