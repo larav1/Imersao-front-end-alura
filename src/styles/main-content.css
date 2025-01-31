@@ -37,6 +37,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   align-items: center;
   padding: 16px;
   margin: 10px;
+  margin-top: -10px;
   border-radius: 8px;
   background-color: #593571;
   /* padding: 12px;
@@ -132,14 +133,16 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .music-container {
-  height: auto; /* Alterado para auto */
+  /* height: auto;  */
   padding-top: 16px;
   margin: 10px;
   border-radius: 10px;
   background-color: #593571;
   margin-left: 332px;
   margin-right: 68px;
-  /* margin-top: -610px; REMOVIDO */
+  /* margin-top: -610px; */
+  /* top: 0;
+  left: 0; */
 }
 
 .music-playlist {
@@ -383,6 +386,6 @@ main {
   display: flex;
   flex-direction: column;
   height: auto;
-  min-width: 80vw;
+  min-width: 90vw;
   padding: 20px;
 }
